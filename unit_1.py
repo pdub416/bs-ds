@@ -5,12 +5,15 @@ import matplotlib.pyplot as plt
 
 # unit 1
 def test():
-    print(my_mean('sales-*.csv'))
+    #print(my_mean('sales-*.csv'))
+    
     data = pd.DataFrame(np.random.random([2,2]))
     my_heatmap(data)
 
-    return None
-
+def my_heatmap(data):
+    plt.plot(data)
+    plt.show
+'''
 def my_mean(filestr):
     meanlist = []
     filelist = glob.glob(filestr)
@@ -24,10 +27,6 @@ def my_mean(filestr):
         meanlist.append(data.mean())
 
     return meanlist
-
-def my_heatmap(data):
-    plt.plot(data)
-    plt.show
-
+'''
 if __name__ == '__main__':
     test()
