@@ -26,7 +26,7 @@ def my_mean(filestr):
     return meanlist
 
 def my_heatmap(data):
-    plt.pcolor(data)
+    plt.plot(data)
     plt.show
 
 if __name__ == '__main__':

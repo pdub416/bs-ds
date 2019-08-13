@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 ixlist = ['Patrick','Lindsay','Ivan','Emily','Iva']
 df = pd.DataFrame({ 'Assignment 1': pd.Series([72,85,87,94,77],index = ixlist),
@@ -7,5 +9,5 @@ df = pd.DataFrame({ 'Assignment 1': pd.Series([72,85,87,94,77],index = ixlist),
                 'Midterm':pd.Series([86,95,92,97,89],index = ixlist),
                 'Final Exam':pd.Series([84,92,90,91,92],index = ixlist) })
 
-df['Final Grade'] = df*[0.1, 0.1, 0.1, 0.3, 0.4]
-pass
+plt.plot(pd.DataFrame(np.random.random([2,3])))
+plt.show()
